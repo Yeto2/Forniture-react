@@ -1,12 +1,12 @@
 import React from 'react'
-import logo from '../images/logo/logo.png'
+// import logo from '../images/logo/logo.png'
 
 function Navbar() {
 return (
-    <nav>
+    <nav className='nav navbar my-3'>
         <div className='container d-flex justify-content-between'>
             <div className='logo'>
-                <img src={logo} />
+                Atatwla
             </div>
             <ul className='list'>
                 <li>Home</li>
@@ -16,7 +16,9 @@ return (
                 <li>Contact</li>
             </ul>
             <div className="icons">
-                icons here
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-sharp fa-solid fa-gear"></i>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
             </div>
         </div>
     </nav>
