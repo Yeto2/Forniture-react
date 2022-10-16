@@ -6,14 +6,14 @@ return (
     <nav className='nav navbar my-3'>
         <div className='container d-flex justify-content-between'>
             <div className='logo'>
-                Atatwla
+                Stor<span>key</span>
             </div>
             <ul className='list'>
-                <li>Home</li>
-                <li>New Arrival</li>
-                <li>Features</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li className="active"><a src="">Home</a></li>
+                <li><a src="">New Arrival</a></li>
+                <li><a src="">Features</a></li>
+                <li><a src="">Blog</a></li>
+                <li><a src="">Contact</a></li>
             </ul>
             <div className="icons">
             <i class="fa-solid fa-magnifying-glass"></i>

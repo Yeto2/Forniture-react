@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* --------- */
+:root{
+  --Primary-color : #f8f9fd;
+  --Secondary-color : #e99c2e;
+}
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fd;
+  background-color: var(--Primary-color);
 }
 .list {
   min-width: 350px;
@@ -17,4 +21,21 @@ body{
   width: 85px;
   display: flex;
   justify-content: space-between;
+}
+.logo > span , .active{
+  color: var(--Secondary-color);
+}
+.logo , li , .icons i {
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+li:hover , .icons i:hover {
+  color: var(--Secondary-color);
+}
+img {
+  width: 240px !important;
 }
