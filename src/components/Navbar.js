@@ -9,7 +9,7 @@ return (
                 Stor<span>key</span>
             </div>
             <ul className='list'>
-                <li className="active"><a src="">Home</a></li>
+                <li className="home"><a src="">Home</a></li>
                 <li><a src="">New Arrival</a></li>
                 <li><a src="">Features</a></li>
                 <li><a src="">Blog</a></li>
