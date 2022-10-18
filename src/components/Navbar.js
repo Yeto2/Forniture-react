@@ -3,7 +3,7 @@ import React from 'react'
 
 function Navbar() {
 return (
-    <nav className='nav navbar my-3'>
+    <nav className='nav navbar'>
         <div className='container d-flex justify-content-between'>
             <div className='logo'>
                 Stor<span>key</span>

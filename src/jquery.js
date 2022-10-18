@@ -1,8 +1,18 @@
-// owl carouseil hero slider
-
-    // $('.owl-carousel').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     responsiveClass:true,
+    $(document).ready(function(){
+        // owl function
+        $(".owl-carousel").owlCarousel(
+        {
+        animateOut: 'fadeOut' ,
+        items:1,
+        loop:true,
+        margin:5,
+        autoplay:true,
+        autoplayTimeout:3500,
+        autoplayHoverPause:true
+        }
+        );
         
-    // })
+        // nav animating
+
+        
+    });

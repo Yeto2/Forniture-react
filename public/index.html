@@ -32,14 +32,25 @@
       $(document).ready(function(){
   $(".owl-carousel").owlCarousel(
     {
+    animateOut: 'fadeOut' ,
     items:1,
     loop:true,
-    margin:10,
+    margin:5,
     autoplay:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:3500,
     autoplayHoverPause:true
 }
   );
+
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 10){
+                $('.nav').addClass('sticky')
+                $('.list').css({"min-width" : "370px"})
+            } else{
+                $('.nav').removeClass('sticky')
+            }
+        });
+
 });
     </script>
   </body>
