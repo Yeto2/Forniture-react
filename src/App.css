@@ -143,3 +143,96 @@ del{
 .buttons .two:hover {
   border: 1px solid var(--Secondary-color);
 }
+
+/* popular section */
+
+.popular-section img {
+  width: 106px !important;
+}
+.popular-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.left , .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left , .middle , .right {
+  height: 240px;
+  background-color: #f8f9fc;
+  padding: 13px;
+  text-align: center;
+}
+
+.popular-section h3 {
+  color: #616060;
+  font-size: 14px;
+}
+.popular-section p {
+  font-size: 12px;
+}
+.popular-section b {
+  color: #616060;
+}
+.popular-section b span{
+  color: var(--Secondary-color);
+}
+.left {
+  justify-content: center;
+  gap: 15px;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  width: 43em;
+  align-items: center;
+}
+.middle-content {
+  display: flex;
+  align-items: flex-start;
+}
+.middle .popular-text {
+  max-width: 540px;
+  text-align: initial;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.right {
+  display: flex;
+  gap: 7px;
+  justify-content: flex-start;
+}
+.right img {
+  position: relative;
+  top: -12px;
+  width: 106px !important;
+}
+.left img{
+  width: 132px !important;
+  position: relative;
+  top: -10px;
+}
+.middle img {
+  position: relative;
+}
+.middle button {
+  padding: 8px;
+  border:1px solid #616060;
+  font-size: 15px;
+}
+.middle button:hover {
+  background-color: #616060;
+  color: white;
+}
+.popular .container{
+  background-color: white !important;
+}
+.cont {
+  background: white;
+  padding: 70px 0px;
+}
