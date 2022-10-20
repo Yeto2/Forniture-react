@@ -181,7 +181,7 @@ del{
 }
 .left {
   justify-content: center;
-  gap: 15px;
+  gap: 7px;
 }
 .middle {
   display: flex;
@@ -215,7 +215,7 @@ del{
 .left img{
   width: 132px !important;
   position: relative;
-  top: -10px;
+  top: -9px;
 }
 .middle img {
   position: relative;
