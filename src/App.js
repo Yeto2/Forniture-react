@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Herodata from './data/hero'
 import Popular from './components/Popular';
+import Newarrival from './components/Newarrival';
+import arrivaldata from './data/newarrival';
+
 
 
 function App() {
@@ -14,7 +17,15 @@ function App() {
               />
       )
   })
-  
+  let arrivalSection = arrivaldata.map((item)=>{
+    return (
+      <Newarrival 
+                key={item.id}
+                {...item}
+            />
+    )
+})
+
   return (
     <>
     <Navbar />
@@ -23,6 +34,10 @@ function App() {
       </div>
       <div className='cont'>
         <Popular />
+      </div>
+
+      <div className='cont'>
+        {arrivalSection}
       </div>
         
     </>
