@@ -37,8 +37,12 @@ function App() {
       </div>
 
       <div className='cont'>
+        <div className='container row'>
+        <h2>New Arrivals</h2>
         {arrivalSection}
       </div>
+      </div>
+      
         
     </>
   );
