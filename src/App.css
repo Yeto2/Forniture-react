@@ -508,15 +508,104 @@ span.stars i:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 150px;
+  height: 180px;
 }
 .cont-clients img {
   width: 100px !important;
 }
 
+/* details section */
 
+.hm-footer-details {
+  background-color: white;
+  padding: 50px 0px;
+}
 
+.hm-foot-title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: var(--Secondary-color);
+}
 
+.hm-footer-widget {
+  margin-bottom: 30px;
+}
+.hm-foot-menu ul li {
+  list-style: none;
+}
+.hm-foot-menu ul {
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.hm-foot-menu ul li a {
+  margin-bottom: 15px;
+  color: #a09e9c;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
 
+.foot-email-subscribe {
+  position: relative;
+  top: -36px;
+  left: 165px;
+  width: 50px;
+  height: 100%;
+  background: transparent;
+  color: #e99c2e;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.foot-email-box input[type="text"] {
+  font-size: 14px;
+  color: #bcb7b2;
+}
+.hm-foot-para p {
+    font-size: 14px;
+    text-transform: initial;
+    margin-bottom: 25px;
+}
+.foot-email-box .form-control {
+  background: #fff;
+  display: block;
+  padding: 10px 15px;
+  outline: 0!important;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+  border: 0;
+}
 
+/* footer section */
+
+.footer {
+  background: #f8f9fd;
+  display: flex;
+  align-items: center;
+  height: 154px;
+}
+
+.hm-footer-copyright p, .hm-footer-copyright p a {
+  color: #a5adb3;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-social {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding-bottom: 15px;
+}
+.footer-social i{
+  color:#a4aaaf;
+}

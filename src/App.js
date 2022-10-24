@@ -12,6 +12,8 @@ import Collection from "./components/Collection";
 import Feature from "./components/Feature";
 import Blog from "./components/Blog";
 import Clients from "./components/Clients";
+import Details from "./components/Details";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -62,6 +64,8 @@ function App() {
       </div>
 
       <Clients/>
+      <Details/>
+      <Footer/>
 
     </>
   );
