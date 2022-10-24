@@ -344,7 +344,7 @@ del{
   background-repeat: no-repeat;
   height: 90vh;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 .col-element1::before , .col-element2::before {
   content: "";
@@ -409,4 +409,47 @@ del{
   height: 100%;
   background: #383e3f;
   opacity: 0.8;
+}
+
+/* Feature section */
+
+.cont-feature {
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cont-feature .section-head {
+  margin-top: 40px;
+}
+.cont-feature .container {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.colums img {
+  height: 250px !important;
+  width: 200px !important;
+}
+.review {
+  display: flex;
+  width: 125px;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+}
+.stars , .review p {
+  font-size:10px;
+}
+.freature-text {
+    text-align: center;
+    padding: 10px 0px;
+}
+span.stars {
+  color: #a9a9a9;
+}
+span.stars i:not(:last-child) {
+  color: #efce4a !important;
 }
