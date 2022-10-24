@@ -10,6 +10,8 @@ import Popular from "./components/Popular";
 import Newarrival from "./components/Newarrival";
 import Collection from "./components/Collection";
 import Feature from "./components/Feature";
+import Blog from "./components/Blog";
+import Clients from "./components/Clients";
 
 
 function App() {
@@ -51,6 +53,16 @@ function App() {
       {featureSection}
       </div>
       </div>
+
+      <div className="cont-blog">
+        <div className="container">
+        <h2 className="section-head">Latest Blog</h2>
+              <Blog />
+        </div>
+      </div>
+
+      <Clients/>
+
     </>
   );
 }
