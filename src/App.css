@@ -17,10 +17,13 @@ body{
   justify-content: space-between;
 }
 .icons {
+  margin: 0px 15px 0px !important;
   font-size: 17px;
-  width: 85px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.icons i {
+  padding-left: 12px;
 }
 .logo > span , .home{
   color: var(--Secondary-color);
@@ -33,17 +36,15 @@ body{
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-li:hover , .icons i:hover {
-  color: var(--Secondary-color);
+li:hover a , .icons i:hover {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  color: var(--Secondary-color) !important;
 }
-nav{
-  padding: 25px !important;
-  transition: 1.5s;
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
-}
+
 
 .sticky{
   position: fixed;
@@ -94,7 +95,7 @@ img {
   margin: 0px;
 }
 .content p {
-  margin: 35px 0 20px;
+  margin: 10px 0 20px;
 }
 p {
   margin: 0;
@@ -427,6 +428,8 @@ del{
     padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+  flex-wrap: wrap;
 }
 .colums img {
   height: 250px !important;
@@ -472,18 +475,18 @@ span.stars i:not(:last-child) {
   -o-transition: 0.6s;
 }
 .blog-img {
-  width: 290px;
-  height: 199px;
+  width: 220px;
+  margin: 0px auto;
   overflow: hidden;
 }
-.col-4:hover img{
+.blog:hover img{
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
-.col-4:hover h6 {
+.blog:hover h6 {
   color: var(--Secondary-color);
 }
 .blog-text h6 {
@@ -553,18 +556,22 @@ a{
   transition: .3s;
 }
 
-.foot-email-subscribe {
+.foot-email-box {
   position: relative;
-  top: -36px;
-  left: 165px;
-  width: 50px;
+}
+.foot-email-subscribe {
+  position: absolute;
+  top: 5px;
+  /* left: 144px; */
+  width: 95%;
   height: 100%;
+  display: flex;
+  padding-right: 0px !important;
   background: transparent;
   color: #e99c2e;
   font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .foot-email-box input[type="text"] {
@@ -609,3 +616,104 @@ a{
 .footer-social i{
   color:#a4aaaf;
 }
+
+/** -------------- media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* -------------------------- navbar  */
+  
+  .icons {
+    margin: 10px 15px!important;
+  }
+
+  /* -------------------------- hero section */
+  .content p {
+    display: none;
+  }
+  .owl-carousel .owl-item img {
+    width: 290px !important;
+}
+.hero {
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  /* margin-left: 58px; */
+  flex-direction: column-reverse;
+  justify-content:space-around;
+}
+
+.popular-section {
+  flex-direction: column;
+}
+/* ---------------------------- popular section*/
+.middle {
+  height: 370px;
+  width: 17em;
+}
+.middle .popular-text {
+  text-align: center;
+  padding: 0px;
+}
+/* ----------------------------- features section */
+.cont-feature .container {
+  gap: 2px;
+  flex-wrap: wrap;
+}
+/* --------------------------- blog section */
+.blog-img {
+  width: 220px;
+  margin: 20px auto 0px;
+  height: 146px;
+}
+.blog-text {
+  text-align: center;
+}
+
+/* -------------------------- clients sectio */
+
+.cont-clients {
+  flex-wrap: wrap;
+}
+/* collection section */
+
+.collection-txt {
+  width: auto;
+  margin-left: 0px !important;
+}
+.rect{
+  display: none !important;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 375px) {
+  
+  .owl-carousel .owl-item img {
+    width: 240px !important;
+  }
+  .content h4 {
+    font-size: 25PX !IMPORTANT;
+  }
+  .content h2 {
+    font-size: 30px;
+    color: #616060;
+    font-weight: 600;
+    margin: 10px 0 15px; 
+  }
+  .buttons button {
+    width: 114px;
+    height: 45px;
+  }
+  .cont-clients {
+    height: 200px;
+}
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {}*/

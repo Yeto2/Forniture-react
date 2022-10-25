@@ -2,7 +2,7 @@ import React from 'react'
 
 function Feature(props) {
     return (
-    <div className='colums'>
+    <div id="features" className='colums'>
         <div>
             <img src={require(`../images/features/${props.img}`)}/>
         </div>

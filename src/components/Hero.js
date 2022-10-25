@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero(props) {
     return (
-    <div className='hero my-4'>
+    <div id="home" className='hero my-4'>
         <div className='content'>
             <h4>{props.headings.first}</h4>
             <h2>{props.headings.second}</h2>

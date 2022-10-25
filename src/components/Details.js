@@ -3,7 +3,7 @@ import React from 'react'
 function Details() {
     return (
         <div class="hm-footer-details">
-        <div class="container row">
+        <div class="container row text-center">
             <div class=" col-md-3 col-sm-6 col-xs-12">
                 <div class="hm-footer-widget">
                     <div class="hm-foot-title">

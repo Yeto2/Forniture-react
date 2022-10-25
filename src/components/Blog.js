@@ -5,8 +5,8 @@ import b3 from '../images/blog/b3.jpg'
 
 function Blog() {
     return (
-    <div className='row'>
-        <div className='col-4'>
+    <div id="blog" className='row'>
+        <div className='blog col-sm-4 col-xs-12'>
             <div className='blog-img'>
                 <img src={b1} />
             </div>
@@ -21,7 +21,7 @@ function Blog() {
                 </p>
             </div>
         </div>
-        <div className='col-4'>
+        <div className='blog col-sm-4 col-xs-12'>
             <div className='blog-img'>
                 <img src={b2}/>
             </div>
@@ -36,7 +36,7 @@ function Blog() {
                 </p>
             </div>
         </div>
-        <div className='col-4'>
+        <div className='blog col-sm-4 col-xs-12'>
             <div className='blog-img'>
                 <img src={b3}/>
             </div>

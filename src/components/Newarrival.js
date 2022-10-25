@@ -2,7 +2,7 @@ import React from 'react'
 
 function Newarrival(props) {
     return (
-    <div className='arrival-card col-md-3'>
+    <div id="arrival" className='arrival-card col-md-3'>
         <div className='arrival-sec'>
             <img src={require(`../images/collection/${props.img}`)} />
             <div className='git'>
