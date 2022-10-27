@@ -7,6 +7,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   background-color: var(--Primary-color);
+  scroll-behavior: smooth !important;
 }
 .list {
   min-width: 350px;
@@ -223,12 +224,15 @@ del{
 }
 .middle button {
   padding: 8px;
-  border:1px solid #616060;
   font-size: 15px;
+  background-color: var(--Secondary-color);
+  border: 1px solid var(--Secondary-color);
+  color: white;
 }
 .middle button:hover {
-  background-color: #616060;
-  color: white;
+  background-color: transparent;
+  color: var(--Secondary-color);
+  border:1px solid var(--Secondary-color);
 }
 .popular .container{
   background-color: white !important;
@@ -560,18 +564,22 @@ a{
   position: relative;
 }
 .foot-email-subscribe {
-  position: absolute;
-  top: 5px;
-  /* left: 144px; */
-  width: 95%;
   height: 100%;
   display: flex;
+  width: 100%;
   padding-right: 0px !important;
   background: transparent;
-  color: #e99c2e;
-  font-size: 22px;
   flex-direction: row;
   justify-content: flex-end;
+}
+.foot-email-subscribe button {
+  height: 40px;
+  width: 60px;
+  font-size: 20px;
+  background-color:var(--Secondary-color);
+  border: none;
+  color: white;
+  margin-top: 9px;
 }
 
 .foot-email-box input[type="text"] {
@@ -613,13 +621,41 @@ a{
   margin: 0px auto;
   padding-bottom: 15px;
 }
-.footer-social i{
-  color:#a4aaaf;
+.footer-social a{
+  color:#a4aaaf !important;
+}
+.footer-social a:hover{
+  color:var(--Secondary-colors) !important;
+}
+/* scroll to top */
+
+.return-to-top {
+  width: 30px;
+  height: 30px;
+  display: none;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: fixed;
+  Z-INDEX: 18;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #e99b2e99;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.return-to-top:hover{
+  background: var(--Secondary-color);
 }
 
-/** -------------- media query */
+/* ------------------------------------------ media query */
 
-/* Extra small devices (phones, 600px and down) */
+/** Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* -------------------------- navbar  */
   
@@ -638,22 +674,29 @@ a{
   height: 100vh !important;
   display: flex;
   align-items: center;
-  /* margin-left: 58px; */
   flex-direction: column-reverse;
   justify-content:space-around;
+}
+.content {
+  text-align: center;
 }
 
 .popular-section {
   flex-direction: column;
 }
 /* ---------------------------- popular section*/
+
 .middle {
   height: 370px;
   width: 17em;
 }
 .middle .popular-text {
-  text-align: center;
+  margin-top: 10px;
   padding: 0px;
+}
+.middle-content {
+  align-items: center;
+  flex-direction: column !important;
 }
 /* ----------------------------- features section */
 .cont-feature .container {
@@ -686,7 +729,7 @@ a{
 }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/** Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 375px) {
   
   .owl-carousel .owl-item img {

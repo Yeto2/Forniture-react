@@ -4,7 +4,7 @@ function Newarrival(props) {
     return (
     <div id="arrival" className='arrival-card col-md-3'>
         <div className='arrival-sec'>
-            <img src={require(`../images/collection/${props.img}`)} />
+            <img alt='new arrivals image' src={require(`../images/collection/${props.img}`)} />
             <div className='git'>
                 <div className='addToCard'>
                     <i class="fa-sharp fa-solid fa-cart-shopping"></i>

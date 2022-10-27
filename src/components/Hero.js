@@ -18,7 +18,7 @@ function Hero(props) {
                 <button className='two'>More Info</button>
             </div>
         </div>
-        <img className='heroSlider' src={require(`../images/slider/${props.img}`)}/>
+        <img alt='slider image' className='heroSlider' src={require(`../images/slider/${props.img}`)}/>
     </div>
     )
 }

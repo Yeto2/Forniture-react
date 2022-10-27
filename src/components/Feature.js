@@ -4,7 +4,7 @@ function Feature(props) {
     return (
     <div id="features" className='colums'>
         <div>
-            <img src={require(`../images/features/${props.img}`)}/>
+            <img alt='feature image' src={require(`../images/features/${props.img}`)}/>
         </div>
         <div className='freature-text'>
             <div className='review'>

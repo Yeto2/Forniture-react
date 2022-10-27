@@ -6,7 +6,6 @@ import React from "react";
 function Collection() {
     return <div className="owl-carousel">
         <div className="col-element1">
-            {/* <img src={sofa} /> */}
             <span className="rect"></span>
             <div className="collection-txt container">
                 <h3>unlimited sofa collection</h3>
@@ -21,7 +20,6 @@ function Collection() {
             </div>
         </div>
         <div className="col-element2">
-            {/* <img src={table} /> */}
             <span className="rect"></span>
             <div className="collection-txt container">
                 <h3>unlimited dainning table collection</h3>

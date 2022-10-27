@@ -8,7 +8,7 @@ function Blog() {
     <div id="blog" className='row'>
         <div className='blog col-sm-4 col-xs-12'>
             <div className='blog-img'>
-                <img src={b1} />
+                <img alt="blog image" src={b1} />
             </div>
             <div className="blog-text">
                 <h6>Why Brands are Looking at Local Language</h6>
@@ -23,7 +23,7 @@ function Blog() {
         </div>
         <div className='blog col-sm-4 col-xs-12'>
             <div className='blog-img'>
-                <img src={b2}/>
+                <img alt="blog image" src={b2}/>
             </div>
             <div className="blog-text">
                 <h6>Why Brands are Looking at Local Language</h6>
@@ -38,7 +38,7 @@ function Blog() {
         </div>
         <div className='blog col-sm-4 col-xs-12'>
             <div className='blog-img'>
-                <img src={b3}/>
+                <img alt="blog image" src={b3}/>
             </div>
             <div className="blog-text">
                 <h6>Why Brands are Looking at Local Language</h6>

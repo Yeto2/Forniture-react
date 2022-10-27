@@ -9,11 +9,11 @@ import c5 from '../images/clients/c5.png'
 function Clients() {
     return (
     <div className='cont-clients container'>
-        <img src={c1} />
-        <img src={c2} />
-        <img src={c3} />
-        <img src={c4} />
-        <img src={c5} />
+        <img alt="levi's"src={c1} />
+        <img alt="h and m"src={c2} />
+        <img alt="lacoste" src={c3} />
+        <img alt="adidas" src={c4} />
+        <img alt="cappa" src={c5} />
     </div>
     )
 }

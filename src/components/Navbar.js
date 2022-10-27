@@ -7,7 +7,7 @@ return (
     <nav className='nav navbar navbar-expand-md'>
         <div className='container d-flex justify-content-between'>
             
-            <div id="home" className="logo navbar-brand">Stor<span>key</span></div>
+            <div href="#home" className="logo navbar-brand">Stor<span>key</span></div>
             <button 
                 className="navbar-toggler" 
                 type="button" 

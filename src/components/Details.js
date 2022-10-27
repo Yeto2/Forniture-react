@@ -65,7 +65,7 @@ function Details() {
                         <div class="foot-email-box">
                             <input type="text" class="form-control" placeholder="Enter Email Here...." />
                         <div class="foot-email-subscribe">
-                            <span><i class="fa fa-location-arrow"></i></span>
+                            <button><i class="fa fa-location-arrow"></i></button>
                         </div>
                         </div>
                     </div>
