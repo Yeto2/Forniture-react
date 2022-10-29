@@ -11,8 +11,8 @@ function Newarrival(props) {
                     <p>Add To Card</p>
                 </div>
                 <span>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-image"></i>
+                    <i className="fa-regular fa-heart"></i>
+                    <i id='zoom' className="fa-regular fa-image"></i>
                 </span>
             </div>
         </div>

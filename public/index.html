@@ -63,9 +63,34 @@
             $(window).scrollTop(0);
         });
         
+
+
+
+let zoom = document.querySelectorAll('#zoom')
+
+zoom.forEach((ele)=>{
+  ele.addEventListener('click' ,(e)=>{
+    let imageCon = document.querySelector('.imageZoom')
+    imageCon.innerHTML = ''
+    let image = e.path[3].children[0].cloneNode(true)
+    image.style.cssText = "height : 170px ; width :60px;"
+        imageCon.append(image)
+        imageCon.classList.toggle("isVisible");
+    console.log(image)
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
         
-    let btn = $('.navbar-toggler')
-    btn.addEventListener('click', ()=>{document.querySelector('nav').classList.toggle("bg-white")});
   });
     </script>
   </body>

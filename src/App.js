@@ -29,6 +29,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className="imageZoom">
+        <span className='exist'>X</span>
+      </div>
 
       <div className="owl-carousel container my-4">
         {heroSection}

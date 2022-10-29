@@ -283,8 +283,10 @@ del{
   -o-transition: 0.6s;
   opacity: 0;
 }
-.arrival-sec:hover .git{
-
+.feature-sec {
+  position: relative;
+}
+.arrival-sec:hover .git , .feature-sec:hover .git{
   height: 30px;
   opacity: 1;
 }
@@ -293,18 +295,35 @@ del{
   display: flex;
   align-items: center;
 }
+.feature-sec .addToCard p{
+  padding-left: 2px;
+  font-size: 0.9em;
+}
+.feature-sec .git span i {
+  padding-left: 6px;
+}
+.addToCard > i {
+  padding-right: 3px;
+}
 .arrival-sec i {
-  padding-right: 13px;
   font-size: 10px;
 }
+i.fa-regular.fa-image {
+  padding-left: 7px;
+}
+.git i {
+  cursor: pointer;
+}
+.git i:hover {
+  color: var(--Secondary-color);
+}
 .arrival-sec p {
-    font-size: 12px;
+    font-size: 10px;
 }
 .arrival-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 120px; */
   justify-content: center;
   padding: 15px 0px 40px;
 }
@@ -416,7 +435,7 @@ del{
   opacity: 0.8;
 }
 
-/* Feature section */
+/**  --------------- Feature section */
 
 .cont-feature {
   background-color: white;
@@ -651,6 +670,37 @@ a{
 }
 .return-to-top:hover{
   background: var(--Secondary-color);
+}
+
+/* ---------- image zoom */
+.imageZoom {
+  width: 100%;
+  height: 100vh;
+  background: #393838e6;
+  position: fixed;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  left: 0px;
+  top: 0px;
+}
+.isVisible{
+  display: flex !important;
+}
+.imageZoom span {
+  width: 20px;
+  font-weight: 800;
+  height: 20px;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 /* ------------------------------------------ media query */

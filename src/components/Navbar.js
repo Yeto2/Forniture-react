@@ -28,9 +28,9 @@ return (
                     <li><a className='nav-link' href="#contact">Contact</a></li>
                 </ul>
                 <div className="icons">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-sharp fa-solid fa-gear"></i>
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                    <i className="fa-sharp fa-solid fa-gear"></i>
+                    <i className="fa-sharp fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
             
