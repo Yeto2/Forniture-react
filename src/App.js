@@ -30,7 +30,10 @@ function App() {
     <>
       <Navbar />
       <div className="imageZoom">
-        <span className='exist'>X</span>
+      <span className='exist'>X</span>
+        <div className='imageZ'>
+
+        </div>
       </div>
 
       <div className="owl-carousel container my-4">
@@ -69,6 +72,9 @@ function App() {
       <Clients/>
       <Details/>
       <Footer/>
+
+
+       {/*  --------------- Modal  */}
 
     </>
   );

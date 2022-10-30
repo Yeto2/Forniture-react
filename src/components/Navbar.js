@@ -30,7 +30,7 @@ return (
                 <div className="icons">
                     <i className="fa-solid fa-magnifying-glass"></i>
                     <i className="fa-sharp fa-solid fa-gear"></i>
-                    <i className="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <i className="fa-sharp fa-solid fa-cart-shopping"><span id='prodNumber'>0</span></i>
                 </div>
             </div>
             

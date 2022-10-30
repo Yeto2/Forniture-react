@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+      // ----------------------------------jquery
       $(document).ready(function(){
   $(".owl-carousel").owlCarousel(
     {
@@ -44,41 +45,66 @@
 
   $(window).scroll(function(){
             if($(this).scrollTop() > 10){
-                $('.nav').addClass('sticky')
-                $('.list').css({"min-width" : "370px"})
-            } else{
-                $('.nav').removeClass('sticky')
-            }
-        });
-        // scroll to top button
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 20){
-                $('.return-to-top').css({"display" : "flex"})
-            } else{
-              $('.return-to-top').css({"display" : "none"})
-            }
-        });
-        // 
-        $("#scroll-Top").click(function(){
-            $(window).scrollTop(0);
-        });
+  $('.nav').addClass('sticky')
+  $('.list').css({"min-width" : "370px"})
+  } else{
+  $('.nav').removeClass('sticky')
+  }
+  });
+  // scroll to top button
+  $(window).scroll(function(){
+  if($(this).scrollTop() > 20){
+    $('.return-to-top').css({"display" : "flex"})
+  } else{
+  $('.return-to-top').css({"display" : "none"})
+  }
+  });
+  // 
+  $("#scroll-Top").click(function(){
+    $(window).scrollTop(0);
+  });
         
+      // ----------------------------------js
 
 
 
 let zoom = document.querySelectorAll('#zoom')
+let imageCon = document.querySelector('.imageZoom')
+let imageZ = document.querySelector('.imageZ')
+let existBtn = document.querySelector('.exist')
 
-zoom.forEach((ele)=>{
-  ele.addEventListener('click' ,(e)=>{
-    let imageCon = document.querySelector('.imageZoom')
-    imageCon.innerHTML = ''
-    let image = e.path[3].children[0].cloneNode(true)
-    image.style.cssText = "height : 170px ; width :60px;"
-        imageCon.append(image)
-        imageCon.classList.toggle("isVisible");
-    console.log(image)
-  })
-})
+        zoom.forEach((ele)=>{
+          ele.addEventListener('click' ,(e)=>{
+            imageZ.innerHTML = ""
+            let image = e.path[3].children[0].cloneNode(true)
+            // image.style.cssText = "height : 170px ; width :60px;"
+                imageZ.append(image)
+                imageCon.classList.add("isVisible");
+
+            })
+          })
+        
+
+        existBtn.addEventListener('click' ,  ()=>{
+        console.log("clkd")
+        imageCon.classList.remove("isVisible");
+        })
+
+
+// product
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
