@@ -7,7 +7,7 @@ function Newarrival(props) {
             <img alt='new arrivals image' src={require(`../images/collection/${props.img}`)} />
             <div className='git'>
                 <div className='addToCard'>
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <i id='shop' className="fa-sharp fa-solid fa-cart-shopping"></i>
                     <p>Add To Card</p>
                 </div>
                 <span>

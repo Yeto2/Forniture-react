@@ -1,8 +1,25 @@
-import React from 'react'
+import React , {useState} from 'react'
 // import logo from '../images/logo/logo.png'
 
 function Navbar() {
-    
+    let [prodNum , setProdNum] = useState('0')
+    setTimeout(() => {
+        let shop = document.querySelectorAll('#shop')
+        shop.forEach(ele => {
+            ele.addEventListener('click' , ()=>{
+                if (+prodNum < 10) {
+                    setProdNum(+prodNum + 1)
+                }else{
+                    console.log('waaa taha isso hhh')
+                    for (let i = 0; i < shop.length; i++) {
+                        shop[i].style.cssText = "pointer-events : none"
+                    }
+                }
+            })
+        });
+
+
+    }, 1000);
 return (
     <nav className='nav navbar navbar-expand-md'>
         <div className='container d-flex justify-content-between'>
@@ -30,7 +47,7 @@ return (
                 <div className="icons">
                     <i className="fa-solid fa-magnifying-glass"></i>
                     <i className="fa-sharp fa-solid fa-gear"></i>
-                    <i className="fa-sharp fa-solid fa-cart-shopping"><span id='prodNumber'>0</span></i>
+                    <i className="fa-sharp fa-solid fa-cart-shopping"><span id='prodNumber'>{prodNum}</span></i>
                 </div>
             </div>
             

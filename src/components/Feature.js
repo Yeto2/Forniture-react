@@ -7,7 +7,7 @@ function Feature(props) {
             <img alt='feature image' src={require(`../images/features/${props.img}`)}/>
             <div className="git">
                 <div className="addToCard">
-                    <i className="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <i id='shop' className="fa-sharp fa-solid fa-cart-shopping"></i>
                     <p>Add To Card</p>
                 </div>
                 <span>

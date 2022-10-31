@@ -26,9 +26,10 @@ function App() {
   let featureSection = featuredata.map((item) => {
     return <Feature key={item.id} {...item} />;
   });
+  
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="imageZoom">
       <span className='exist'>X</span>
         <div className='imageZ'>
@@ -73,8 +74,6 @@ function App() {
       <Details/>
       <Footer/>
 
-
-       {/*  --------------- Modal  */}
 
     </>
   );
