@@ -74,6 +74,29 @@ span#prodNumber {
   font-size: 13px;
 }
 
+.listProd {
+  position: absolute;
+  width: 315px;
+  height: 120px;
+  background: #e99c2eb5;
+  top: 36px;
+  left: -220px;
+  z-index: 22;
+}
+.listProd::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 14px solid;
+  position: absolute;
+  border-color: transparent transparent #e99c2eb5 transparent;
+  top: -28px;
+  right: 0px;
+}
+.listProd::after , .listProd {
+  display: none;
+}
+
 /* --------- */
 img {
   width: 330px !important;
@@ -705,6 +728,9 @@ a{
 }
 .isVisible{
   display: flex !important;
+}
+.visibleBlock{
+  display: block !important;
 }
 .imageZoom span {
   width: 20px;

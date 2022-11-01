@@ -5,18 +5,31 @@ function Navbar() {
     let [prodNum , setProdNum] = useState('0')
     setTimeout(() => {
         let shop = document.querySelectorAll('#shop')
-        shop.forEach(ele => {
-            ele.addEventListener('click' , ()=>{
-                if (+prodNum < 10) {
-                    setProdNum(+prodNum + 1)
-                }else{
-                    console.log('waaa taha isso hhh')
-                    for (let i = 0; i < shop.length; i++) {
-                        shop[i].style.cssText = "pointer-events : none"
-                    }
-                }
-            })
-        });
+        for (let i = 0; i < shop.length; i++) {
+            shop[i].addEventListener('click' , ()=>{
+                        if (+prodNum < 10) {
+                            setProdNum(+prodNum + 1)
+                        }else{
+                            console.log('waaa taha isso hhh')
+                            for (let i = 0; i < shop.length; i++) {
+                                shop[i].style.cssText = "pointer-events : none"
+                            }
+                        }
+                    })
+            
+        }
+        // shop.map(ele => {
+        //     ele.addEventListener('click' , ()=>{
+        //         if (+prodNum < 10) {
+        //             setProdNum(+prodNum + 1)
+        //         }else{
+        //             console.log('waaa taha isso hhh')
+        //             for (let i = 0; i < shop.length; i++) {
+        //                 shop[i].style.cssText = "pointer-events : none"
+        //             }
+        //         }
+        //     })
+        // });
 
 
     }, 1000);
@@ -47,7 +60,9 @@ return (
                 <div className="icons">
                     <i className="fa-solid fa-magnifying-glass"></i>
                     <i className="fa-sharp fa-solid fa-gear"></i>
-                    <i className="fa-sharp fa-solid fa-cart-shopping"><span id='prodNumber'>{prodNum}</span></i>
+                    <i id='panel' className="fa-sharp fa-solid fa-cart-shopping"><span id='prodNumber'>{prodNum}</span></i>
+                    <div className='listProd'></div>
+
                 </div>
             </div>
             
