@@ -83,8 +83,7 @@ span#prodNumber {
   left: -220px;
   z-index: 22;
 }
-.listProd::after {
-  content: '';
+.arrow-up {
   width: 0px;
   height: 0px;
   border: 14px solid;
@@ -93,7 +92,7 @@ span#prodNumber {
   top: -28px;
   right: 0px;
 }
-.listProd::after , .listProd {
+.arrow-up , .listProd {
   display: none;
 }
 

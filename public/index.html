@@ -93,11 +93,50 @@ let existBtn = document.querySelector('.exist')
 // product
 
 
-
+let prodNumber = document.querySelector('#prodNumber')
 
 $("#panel").click(function(){
-    $(".listProd::after , .listProd").toggle("visibleBlock");
+      if(+prodNumber.innerHTML === 0){
+        $('#panel').attr("tittle", "No product");
+        document.querySelector('#panel').setAttribute('tittle', 'No Product Added !')
+      }else{
+        $(".arrow-up , .listProd").toggle("visibleBlock");
+      } 
   });
+
+  let shop = document.querySelectorAll('#shop')
+  let prods = [];
+
+  shop.forEach((ele)=>{
+          ele.addEventListener('click' ,(e)=>{
+            let prodImg = e.path[3].children[0].cloneNode(true)
+            let prodName = e.path[4].children[1].children[0]
+            let prodPrice = e.path[4].children[1].children[1]
+
+            // console.log(prodName)
+            // console.log(prodPrice)
+            // console.log(prodImg)
+
+                let prodCon = document.createElement("div");
+                  prodCon.append(prodImg);
+                    let prodConTxt = document.createElement("div");
+                      prodConTxt.append(prodName);
+                      prodConTxt.append(prodPrice);
+                  prodCon.append(prodConTxt);
+                    prods.push(prodCon)
+                
+
+            localStorage.setItem("prods" , JSON.stringify(prods))
+            console.log(prods)
+
+
+
+
+
+            // image.style.cssText = "height : 170px ; width :60px;"
+
+            })
+          })
 
 
 
